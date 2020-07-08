@@ -1,3 +1,5 @@
+require "formula"
+
 class Domo < Formula
   desc "CLI for creating custom apps on Domo's App Platform"
   homepage "https://developer.domo.com/docs/dev-studio/dev-studio-overview"
