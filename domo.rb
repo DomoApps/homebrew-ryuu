@@ -1,4 +1,4 @@
-require "formula"
+require 'formula'
 
 class Domo < Formula
   desc "CLI for creating custom apps on Domo's App Platform"
