@@ -38,13 +38,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>DomoApps</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/DomoApps/homebrew-ryuu/</projectUrl>
-    <!--<iconUrl></iconUrl>-->
-    <!-- <copyright>2020 Domo</copyright> -->
+    <iconUrl>https://domo.domo.com/public/images/logo-400.png</iconUrl>
+    <copyright>Copyright © 2011 — 2020 Domo, Inc.</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <!-- <licenseUrl>Software License Location</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
     <!--<projectSourceUrl>Software Source Location</projectSourceUrl>-->
-    <!--<docsUrl>https://developer.domo.com/docs/dev-studio/dev-studio-overview</docsUrl>-->
+    <docsUrl>https://developer.domo.com/docs/dev-studio/dev-studio-overview</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>domo commandline ryuu</tags>
