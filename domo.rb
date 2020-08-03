@@ -9,7 +9,7 @@ class Domo < Formula
   def install
     npmInstall = which("npm")
     if npmInstall 
-      rm "~/" + ENV["NVM_BIM"] + "/domo"
+      rm Dir("~/" + ENV["NVM_BIM"] + "/domo")
     end
     bin.install "domo"
   end
