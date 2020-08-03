@@ -11,7 +11,7 @@ class Domo < Formula
   end
 
   test do
-    rm_r (ENV["NVM_BIN"]+"/domo")
+    rm_r "/Users/johnnemelka/.nvm/versions/node/v12.16.1/bin/domo"
     version_out = shell_output("#{bin}/domo -v")
     assert_match version.to_s, version_out
     help_out = shell_output("#{bin}/domo -h")
