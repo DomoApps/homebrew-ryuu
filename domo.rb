@@ -7,7 +7,7 @@ class Domo < Formula
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
   def install
-    npm uninstall -g ryuu if which npm
+    system "npm", "uninstall", "-g", "ryuu", if system "which", "npm"
     bin.install "domo"
   end
 
