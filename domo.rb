@@ -8,9 +8,8 @@ class Domo < Formula
 
   def install
     npmInstall = which("npm")
-    print npmInstall
     if npmInstall 
-      system "npm", "uninstall", "-g", "ryuu"
+      rm "~/" + ENV["NVM_BIM"] + "/domo"
     end
     bin.install "domo"
   end
