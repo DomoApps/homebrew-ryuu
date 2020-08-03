@@ -8,6 +8,7 @@ class Domo < Formula
 
   def install
     npmInstall = which("npm")
+    print npmInstall
     if npmInstall 
       system "npm", "uninstall", "-g", "ryuu"
     end
