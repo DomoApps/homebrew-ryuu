@@ -11,11 +11,11 @@ class Domo < Formula
   end
 
   test do
-    system "npm", "uninstall", "-g", "ryuu"
+    shell_output("#{bin}/npm uninstall -g ryuu")
     version_out = shell_output("#{bin}/domo -v")
     assert_match version.to_s, version_out
     help_out = shell_output("#{bin}/domo -h")
-    assert_match "Usage: domo[options] [command]", help_out
+    assert_match "Usage: domo [options] [command]", help_out
     assert_match "", help_out
     assert_match "Options:", help_out
   end
