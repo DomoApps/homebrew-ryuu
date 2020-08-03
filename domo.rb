@@ -7,7 +7,10 @@ class Domo < Formula
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
   def install
-    system "npm", "uninstall", "-g", "ryuu" if system "which", "npm"
+    npmInstall = system "which", "npm"
+    if npmInstall 
+      system "npm", "uninstall", "-g", "ryuu"
+    end
     bin.install "domo"
   end
 
