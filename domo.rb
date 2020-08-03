@@ -11,7 +11,7 @@ class Domo < Formula
   end
 
   test do
-    shell_output("#{bin}/npm uninstall -g ryuu")
+    shell_output("npm uninstall -g ryuu")
     version_out = shell_output("#{bin}/domo -v")
     assert_match version.to_s, version_out
     help_out = shell_output("#{bin}/domo -h")
