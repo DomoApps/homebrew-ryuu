@@ -7,13 +7,12 @@ class Domo < Formula
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
   def install
-    system "npm", "uninstall", "-g", "domo"
     bin.install "domo"
   end
 
   test do
-    system "npm", "uninstall", "-g", "domo"
-    version_out = shell_output("#{bin}/domo -v")
+    system "npm", "uninstall", "-g", "ryuu"
+    version_out = shell_output("#{bin}/domo -h")
     assert_match version.to_s, version_out
     help_out = shell_output("#{bin}/domo -h")
     assert_match "Usage: domo[options] [command]", help_out
