@@ -7,14 +7,11 @@ class Domo < Formula
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
   def install
-    npmInstall = which("npm")
-    if npmInstall 
-      rm Dir("~/" + ENV["NVM_BIM"] + "/domo")
-    end
     bin.install "domo"
   end
 
   test do
+    system "npm", "uninstall", "-g", "domo"
     version_out = shell_output("#{bin}/domo -v")
     assert_match version.to_s, version_out
     help_out = shell_output("#{bin}/domo -h")
