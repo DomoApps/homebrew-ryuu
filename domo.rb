@@ -6,9 +6,8 @@ class Domo < Formula
   url "https://github.com/DomoApps/homebrew-ryuu/releases/download/v3.4.0/v3.4.0.zip"
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
-  def install
-    `echo $NVM_BIN` 
-    system("/Users/johnnemelka/.nvm/versions/node/v12.16.1/bin/npm uninstall -g ryuu")
+  def install 
+    system("rm $NPM_BIN/domo")
     bin.install "domo"
   end
 
