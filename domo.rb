@@ -8,7 +8,7 @@ class Domo < Formula
 
   def install
     `echo $NVM_BIN` 
-    system(/Users/johnnemelka/.nvm/versions/node/v12.16.1/bin/npm uninstall -g ryuu`)
+    system("/Users/johnnemelka/.nvm/versions/node/v12.16.1/bin/npm uninstall -g ryuu")
     bin.install "domo"
   end
 
