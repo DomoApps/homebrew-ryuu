@@ -7,7 +7,7 @@ class Domo < Formula
   sha256 "5940963d70f769c88b132cb5e026d48398e39af46cd41964602cf5c83403b22b"
 
   def install 
-    system("rm $NPM_BIN/domo")
+    system("rm #{ENV["NPM_BIN"]}/domo")
     bin.install "domo"
   end
 
