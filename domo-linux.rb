@@ -1,6 +1,6 @@
 require 'formula'
 
-class Domo < Formula
+class Domo-linux < Formula
   desc "CLI for creating custom apps on Domo's App Platform"
   homepage "https://developer.domo.com/docs/dev-studio/dev-studio-overview"
   url "https://github.com/DomoApps/homebrew-ryuu/releases/download/v4.1.1/domo-linux.zip"
