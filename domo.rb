@@ -3,8 +3,8 @@ require 'formula'
 class Domo < Formula
   desc "CLI for creating custom apps on Domo's App Platform"
   homepage "https://developer.domo.com/docs/dev-studio/dev-studio-overview"
-  url "https://github.com/DomoApps/homebrew-ryuu/releases/download/v4.1.2/domo.zip"
-  sha256 "a766ab67bc83ccae13ea1e969e2c636afe5e7f5b5bd457e22c39b5aa16b010a9"
+  url "https://github.com/DomoApps/homebrew-ryuu/releases/download/v4.1.4/domo.zip"
+  sha256 "fdd0290ae62ca673cc59e4a038a42e8fa056a9aed2d15cf819edfbc34945c3c3"
 
   def install 
     bin.install "domo"
