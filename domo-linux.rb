@@ -7,7 +7,7 @@ class DomoLinux < Formula
   sha256 "8ecd8c8848c398a6d759f00bc18c4637c0adf3080c18e7b71add6fe9828e483d"
 
   def install 
-    bin.install "domo"
+    bin.install "domo-linux" => "domo"
   end
 
   test do
