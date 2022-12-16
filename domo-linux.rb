@@ -4,7 +4,7 @@ class DomoLinux < Formula
   desc "CLI for creating custom apps on Domo's App Platform"
   homepage "https://developer.domo.com/docs/dev-studio/dev-studio-overview"
   url "https://github.com/DomoApps/homebrew-ryuu/releases/download/v4.2.5/domo-linux.zip"
-  sha256 "767f48c1ead1afe44abf4d3ff09196800109b3bf684cafb701a61b0a49f78f23"
+  sha256 "164bc842533ffee0c6ba89120421cbe7b1da2acc574627505e0d8b46379f27c2"
 
   def install 
     bin.install "domo-linux" => "domo"
